@@ -1,2 +1,2 @@
-# Code-language-c
-Mine
+# C programming
+This is my C implementation projects
