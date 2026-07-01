@@ -15,7 +15,14 @@ jobs:
     - uses: actions/checkout@v4
     
     - name: Compile C Program
-      run: gcc main.c -o my_program
+      run: gcc main.c moseh.c my_program
       
     - name: run executable
       run: ./my_program
+
+
+
+
+
+
+
