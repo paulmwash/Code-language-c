@@ -8,23 +8,22 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Compile C Program
       run: |
         gcc -Wall -Wextra -std=c11 \
             main.c moseh.c \
             -o my_program
-      - name: Run with arguments
+
+    - name: Run executable
+      run: ./my_program
+
+    - name: Run with help argument
       run: |
         if [ -x ./my_program ]; then
           ./my_program "help"
         fi
-
-
-
-
