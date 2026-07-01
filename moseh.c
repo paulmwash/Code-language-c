@@ -7,3 +7,4 @@ void id(int argc, char *argv[]){
   else{
     printf("Your name is %s",argv[1]);
   }  
+}
